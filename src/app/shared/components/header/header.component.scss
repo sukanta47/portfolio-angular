@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  height: 64px;
+  .logo-space {
+    display: inline-block;
+    height: 50px;
+    img {
+      max-height: 50px; /* Adjust as needed */
+    }
+  }
+}

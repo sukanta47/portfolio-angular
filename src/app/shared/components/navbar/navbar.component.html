@@ -1,0 +1,30 @@
+<!-- <nav class="navbar">
+  <i class="fa-solid fa-plane"></i>
+  <ul class="nav-list">
+    <li class="nav-item">
+      <a class="navbar-link" routerLink="/home" routerLinkActive="active">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="navbar-link" routerLink="/about" routerLinkActive="active">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="navbar-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+    </li>
+  </ul>
+</nav> -->
+<div *ngIf="true"  class="">
+  <i class="fas fa-user" (click)="onhoverAction($event)" id="menu"></i>
+  <ng-template #elseBlock>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item" *ngFor="let item of navItems">
+          <a href="{{ item.link }}" class="nav-link">
+            <i [class]="item.icon" id="{{ item.name }}"></i>
+            <span class="nav-text">{{ item.name }}</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </ng-template>
+</div>
+
